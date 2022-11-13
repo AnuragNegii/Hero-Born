@@ -56,7 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\TreasureChestExperiment.cs" />
     <Compile Include="Assets\LearningCurve.cs" />
+    <Compile Include="Assets\CaseCheck.cs" />
+    <Compile Include="Assets\DiceRoll.cs" />
+    <Compile Include="Assets\ListingNewThings.cs" />
+    <Compile Include="Assets\DictionaryForItems.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
