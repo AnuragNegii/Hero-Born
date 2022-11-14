@@ -10,14 +10,28 @@ public class ListingNewThings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        QuestPartyMembers.Add("Craven the Necromancer");
-        QuestPartyMembers.Insert(1, "Tanis the Thief");
+        //  QuestPartyMembers.Add("Craven the Necromancer");
+        //  QuestPartyMembers.Insert(1, "Tanis the Thief");
 
-        Debug.LogFormat("Party Member : {0}", QuestPartyMembers.Count);
+        // Debug.LogFormat("Party Member : {0}", QuestPartyMembers.Count);
 
-        QuestPartyMembers.RemoveAt(0);
-        Debug.LogFormat("Party Member : {0}", QuestPartyMembers.Count);
+        //QuestPartyMembers.RemoveAt(0);
+        // Debug.LogFormat("Party Member : {0}", QuestPartyMembers.Count);
 
+        FindPartyMember();
+
+    }
+
+    public void FindPartyMember()
+    {
+        for (int i = 0; i < QuestPartyMembers.Count; i++)
+        {
+            Debug.LogFormat("Index: {0} - {1}", i, QuestPartyMembers[i]);
+            if(QuestPartyMembers[i] == "Merlin the Wise")
+            {
+                Debug.Log("Glad you are here merlin!");
+            }
+        }
     }
 
     // Update is called once per frame
