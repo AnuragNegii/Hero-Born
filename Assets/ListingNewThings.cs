@@ -18,8 +18,11 @@ public class ListingNewThings : MonoBehaviour
         //QuestPartyMembers.RemoveAt(0);
         // Debug.LogFormat("Party Member : {0}", QuestPartyMembers.Count);
 
-        FindPartyMember();
-
+        // FindPartyMember();
+        foreach(string partyMember in QuestPartyMembers)
+        {
+            Debug.LogFormat("{0} - Here!", partyMember);
+        }
     }
 
     public void FindPartyMember()
