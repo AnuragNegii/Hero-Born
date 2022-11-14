@@ -9,6 +9,7 @@ public class WhileLoop : MonoBehaviour
     void Start()
     {
         HealthStatus();
+        
     }
 
     public void HealthStatus(){
