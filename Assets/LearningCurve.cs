@@ -5,16 +5,26 @@ using UnityEngine;
 public class LearningCurve : MonoBehaviour
 {
     Character hero = new Character();
-    Character heroine = new Character("Agatha");
-   
+
+    // Character heroine = new Character("Agatha");
+
+    Weapon huntingBow = new Weapon("Hunting Bow", 105);
+    
     // Start is called before the first frame update
     // public int CurrentGold = 32;
     // public bool hasDungeonKey = false;
     // public string weaponType = "Arcane Staff";
     void Start()
     {   
-        hero.PrintStatsInfo();
-        heroine.PrintStatsInfo();
+        Weapon warBow = huntingBow;
+        warBow.name = "War Bow";
+        warBow.damage = 180;
+        huntingBow.PrintWeaponStats();
+        warBow.PrintWeaponStats();
+        // Character hero2 = hero;
+        // hero2.name = "sir brave knight";
+        // hero.PrintStatsInfo();
+        // hero2.PrintStatsInfo();
         // int characterLevel = 5;
         // Debug.Log(GenerateCharacter("Spike", characterLevel));
         // thievery();
